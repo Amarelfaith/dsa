@@ -100,15 +100,20 @@ stack.put(40, timeout=1)
 """
 
 # create a stack using list and reverse it
-name = 'amar'
+"""name = 'amar'
 new_name = list()
 for i in name:
     new_name.append(i)
     
-print(new_name)
+print(''.join(new_name))
 # reversing the string
 reversed_name = []
 for _ in range(len(new_name)):
     reversed_name.append(new_name.pop())
     
-print(f"Reversed name: {reversed_name}")
+print(f"Reversed name: {''.join(reversed_name)}")"""
+
+# reverse a string
+string = 'amar'
+reversed_string = ''.join(reversed(string))
+print(reversed_string)
