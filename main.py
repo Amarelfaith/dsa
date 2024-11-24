@@ -113,7 +113,73 @@ for _ in range(len(new_name)):
     
 print(f"Reversed name: {''.join(reversed_name)}")"""
 
-# reverse a string
+"""# reverse a string
 string = 'amar'
 reversed_string = ''.join(reversed(string))
-print(reversed_string)
+print(reversed_string)"""
+
+
+"""# Implenting Queue with Queue class from queue module
+import queue
+q = queue.Queue()
+def enqueue():
+    element = int(input('Enter element: '))
+    q.put(element)
+    print(f"{element}: inserted into the queue")
+
+def dequeue():
+    if q.empty():
+        print('Queue is empty')
+    else:
+        
+        print(q.get(), 'is removes from queue')
+
+def display():
+    print(vars(q))
+
+while True:
+    choice = int(input('Options: 1.Insert 2.Remove 3.Show 4.Quit \nChoose: '))
+    if choice == 1:
+        enqueue()
+    elif choice == 2:
+        dequeue()
+    elif choice == 3:
+        display()
+    elif choice == 4:
+        break
+    else:
+        print('Unknown Choice! ')"""
+
+
+# implementing queueu using deque class of collections 
+# from left to right
+import collections
+q = collections.deque()
+
+def enqueue():
+    e = int(input('Enter element: '))
+    q.append(e)
+    print(f"{e} is added to the queue")
+    
+def dequeue():
+    if not q:
+        print('queue is empty')
+    else:
+        print(q.popleft(), 'is removed from queue')
+        
+def display():
+    print(q)
+    
+while True:
+    choice = int(input('Options: 1.Insert 2.Remove 3.Show 4.Quit \nChoose: '))
+    if choice == 1:
+        enqueue()
+    elif choice == 2:
+        dequeue()
+    elif choice == 3:
+        display()
+    elif choice == 4:
+        break 
+    else:
+        print('Unknown choice')
+        
