@@ -13,7 +13,7 @@ print(stack)"""\
 
 """
 # another way of implemeting a stack using list with user input
-import collections
+
 stack = []
 
 
@@ -60,7 +60,7 @@ for _ in range(len(stack)):
 print(f"Reversed stack: {e}")"""
 
 # queue module 
-import queue as q 
+"""import queue as q 
 stack = q.LifoQueue()
 # pushed items into the stack
 for i in range(5):
@@ -84,4 +84,7 @@ for item in reversed(temp_stack):
     s_tack.append(item) 
 
 # now printing the stack as it should be
-print(f"My LifoQueue stack: {s_tack}")
+print(f"My LifoQueue stack: {s_tack}")"""
+
+q = []
+print(not q)
